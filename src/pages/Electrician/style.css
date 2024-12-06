@@ -1,0 +1,26 @@
+@media (min-width: 800px) and (max-width: 1100px) {
+  .hidden-md {
+    display: none !important;
+  }
+
+  .width-md {
+    width: 100%;
+  }
+
+  .padding-md {
+    padding: 20px 20px;
+  }
+
+  .sticky-md {
+    display: flex;
+  }
+}
+
+@media (min-width: 403px) and (max-width: 600px) {
+  .parent-width-md {
+    width: 100% !important;
+  }
+  .button-width-md {
+    width: 50% !important;
+  }
+}

@@ -1,0 +1,17 @@
+@media (min-width: 850px) and (max-width: 940px) {
+  .grid-md {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define three equal columns */
+  }
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+  .border-left-md {
+    border: none !important;
+  }
+
+  .button-width-md {
+    width: 50% !important;
+  }
+}
+

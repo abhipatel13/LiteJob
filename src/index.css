@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body {
+  background-color: rgb(217, 227, 235);
+} */
+
+* {
+  font-family: "Satoshi", sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-window {
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  top: -100%; /* Initial state: The chat window is off the top of the screen */
+  /* Other styling properties */
+}
+
+.chat-window.open {
+  top: 0; /* Final state: The chat window is at the top of the screen */
+}
+
+
+
+
+.background-animate {
+  background-size: 400%;
+
+  -webkit-animation: AnimationName 17s ease infinite;
+  -moz-animation: AnimationName 17s ease infinite;
+  animation: AnimationName 17s ease infinite;
+}
+
+
+
+@keyframes AnimationName {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@layer components {
+  .socialIcon {
+    @apply w-11 border-[1px] border-blue-400 border-solid h-11 rounded-full px-2 py-1 text-pink-500  hover:text-blue-400 cursor-pointer transition duration-200 hover:animate-pulse;
+  }
+
+  .card-swiper .swiper-pagination {
+    @apply z-30;
+  }
+
+  .card-swiper .swiper-pagination-bullet {
+    @apply bg-white opacity-60;
+  }
+
+  .card-swiper .swiper-pagination-bullet-active {
+    @apply opacity-100;
+  }
+
+  .card-swiper .swiper-button-prev,
+  .card-swiper .swiper-button-next {
+    @apply z-30 bg-white shadow-md shadow-primary rounded-full h-8 w-8 transition-all duration-300 opacity-0 group-hover:opacity-100;
+  }
+
+  .card-swiper .swiper-button-prev:hover,
+  .card-swiper .swiper-button-next:hover {
+    @apply scale-105 shadow-2xl transition-all duration-300;
+  }
+
+  .card-swiper .swiper-button-prev::after,
+  .card-swiper .swiper-button-next::after {
+    @apply text-xs font-extrabold text-primary;
+  }
+
+  .items-swiper .swiper-button-prev,
+  .items-swiper .swiper-button-next {
+    @apply z-30 bg-white shadow shadow-gray-300 rounded-full h-8 w-8 transition-all duration-300;
+  }
+
+  .items-swiper .swiper-button-prev:hover,
+  .items-swiper .swiper-button-next:hover {
+    @apply scale-105 shadow-md shadow-primary transition-all duration-300;
+  }
+
+  .items-swiper .swiper-button-prev::after,
+  .items-swiper .swiper-button-next::after {
+    @apply text-xs font-extrabold text-primary;
+  }
+}
+
+.items-swiper .swiper-button-disabled,
+.card-swiper .swiper-button-disabled {
+  opacity: 0 !important;
+}
+
+/* swiper */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mySwiper .swiper-button-next::after {
+  @apply w-[24px] h-[24px] text-[20px] text-white rounded-full text-center  object-cover;
+}
+.mySwiper .swiper-button-prev::after {
+  @apply w-[24px] h-[24px] text-[20px] text-white rounded-full text-center  object-cover;
+}
+
+.reviewSwiper .swiper-pagination {
+  display: none;
+}
+
+
+
+.sticky {
+  position: sticky;
+  top: 20px; /* Adjust this value as needed */
+  z-index: 1000; /* Adjust the z-index as needed */
+  background-color: white; /* Adjust background color as needed */
+  padding: 20px; /* Adjust padding as needed */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+}
+
+
+
+/* signup */
+
+.half{
+  width: 100%;
+}
+.heading{
+  position: relative;
+  display: flex;
+  width: 100% !important;
+  font-size: 30px;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.tabs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tabdesign{
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  gap: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.514);
+  border-radius: 5px;
+}
+.tabdesign button{
+  border-radius: 5px;
+}
+.account{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.account span{
+  color: blue;
+  text-decoration: underline;
+}
+.textArea{
+  width: 100%; padding: 8px; height:120px; border:1px solid gray; border-radius:5px;
+}
+@media (max-width: 767px) {
+  .bg-white {
+    width: 100%;
+  }
+  .circle{
+    display: none;
+  }
+}
+
+/* @media (min-width: 800px) and (max-width: 1100px) {
+  .hidden-md {
+    display: none;
+  }
+} */
+
+
+
+

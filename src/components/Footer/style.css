@@ -1,0 +1,5 @@
+@media (min-width: 800px) and (max-width: 1166px) {
+    .footer-md{
+        width: 40% !important;
+    }
+}

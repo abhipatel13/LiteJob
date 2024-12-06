@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Cereal";
+  src: url("47112e7b188415aa1bc68739ad47e762.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cereal";
+  src: url("10032c1507d56501c452f2ae1f805b88.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cereal";
+  src: url("904f37dfac19035d8845e9c397b86020.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
